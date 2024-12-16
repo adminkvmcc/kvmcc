@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KVPJB Confession</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font (Oswald) -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/forbidden.png">
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      height: 110vh;
+    }
+    .rules ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .rules ul li {
+      margin-bottom: 10px;
+    }
+    a {
+    text-decoration: none;
+    color: #0088cc;
+    font-size: 18px;
+}
+
+a i {
+    margin-right: 8px;
+}
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Confession Form -->
+      <h3 class="text-center mb-4">KVPJB Confession</h3>
+      <form id="form">
+        <div class="mb-3">
+          <label for="confession" class="form-label">Your Confession</label>
+          <textarea class="form-control" id="text" name="confession" rows="5" placeholder="Enter your text here..." required></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success">Send</button>
+        </div>
+      </form>
+
+      <!-- Title Penafian Section -->
+      <div class="mt-5">
+        <h5 class="text-center">Disclaimer | Penafian</h5>
+        <div class="accordion" id="penafianAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Baca Garis Panduan Penafian dan Pengakuan
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#penafianAccordion">
+              <div class="accordion-body">
+                <p>"Saluran ini bersifat terbuka dan bebas, di mana setiap pelajar diberi peluang untuk menyuarakan pendapat mereka tanpa sebarang sekatan. Walau bagaimanapun, pihak kami tidak bertanggungjawab atas sebarang bentuk salah laku, penyalahgunaan, atau kandungan yang tidak wajar yang mungkin disampaikan oleh pelajar atau pengguna lain melalui saluran ini. Segala pendapat, kenyataan, atau pandangan yang dinyatakan adalah hak peribadi individu dan tidak mencerminkan pandangan atau pendirian rasmi pihak pengurusan saluran. Pengguna dinasihatkan untuk menggunakan platform ini dengan penuh tanggungjawab dan mematuhi etika serta peraturan yang ditetapkan. SEGALA YANG DIHANTAR TIDAK DAPAT DIPADAM"</p>
+                <a href="https://t.me/KVPJBConfessionX" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> Telegram Channel</a>
+                <hr>
+                <h5>KVPJB Confession</h5>
+                <ul class="rules">
+                    <li>Privasi dalam penghantaran pengakuan akan dilindungi sepenuhnya oleh pihak kami.</li>
+                    <li>Saluran ini diwujudkan semata-mata untuk tujuan hiburan.</li>
+                    <li style="color: red;">Saluran ini bersifat TERBUKA dan BEBAS.</li>
+                    <li>Saluran ini diwujudkan bagi memberi ruang kepada setiap pelajar untuk menyuarakan pendapat.</li> 
+                    <li>Merujuk kepada privasi, kami tidak tahu siapa anda dan saluran ini bebas untuk menyuarakan pendapat.</li>  
+                    <li>Tidak digalakkan menyebut atau merujuk nama pengguna lain bagi menjaga nama baik, aib seseorang, mengelakkan provokasi dan privasi semua pengguna KVPCX.</li>
+               
+                  <li>"Bersama Membina Masa Depan"</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable certain key combinations (like F12 for DevTools, Ctrl+Shift+I, etc.)
+    document.addEventListener('keydown', function(e) {
+        // F12 key
+        if (e.keyCode == 123) {
+            e.preventDefault();
+        }
+        // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S
+        if (e.ctrlKey && (e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83)) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
